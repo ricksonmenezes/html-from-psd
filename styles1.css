@@ -76,3 +76,19 @@ footer {
     border: 1px solid blue;
     display: block;
 }
+
+ 
+.column-left {
+    width: 40%;
+   
+    padding: 20px;
+}
+
+.column-right {
+    width: 80%;
+    
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    padding: 20px;
+    color: white; /* Text color for contrast */
+}

@@ -1,18 +1,10 @@
 
 
 
-header {
-    flex: 0 1 10%;
-}
-main {
-    background-image: url('img/middle.png'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire area */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    
-    color: white; /* Optional: Change text color for better contrast */
-}
-footer {
-    flex: 0 1 40%;
-}
+body { font-family: 'Gotham'; font-weight: normal;}
 
+
+
+
+
+footer { padding: 20px 0; color: #929ba4;}
