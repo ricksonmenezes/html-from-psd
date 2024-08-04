@@ -2,7 +2,7 @@
 
 
 body { font-family: 'Gotham'; font-weight: normal;}
-
+.content { background: url(img/bg.jpg) no-repeat center 0;  height: auto; color: #fff; background-size: cover;}
 
 
 
