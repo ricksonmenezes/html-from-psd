@@ -53,6 +53,10 @@
                             </select>
                     </div>
 
+                        <div class=" text-center">
+                            <a href="#" class="link modal-trigger " data-modal="modal1">Can't find your category?
+                                Click here.</a>
+                        </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12">
 
@@ -178,7 +182,74 @@
         </div>
     </footer>
 
+<div id="modal1" class="modal">
 
+            <!-- Modal Content -->
+            <div class="modal-content">
+                <span class="close" data-modal="modal1">X</span>
+                <div class="position-relative py-1 ps-5">
+                    <span class="info1 top-0 start-0">3</span>
+                    Which Family law issue(s) apply to your case?
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk1">
+                            <label class="form-check-label" for="chk1">Adoptions</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk2">
+                            <label class="form-check-label" for="chk2">Child Support</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk3">
+                            <label class="form-check-label" for="chk3">Guardianship</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk4">
+                            <label class="form-check-label" for="chk4">Separations</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk5">
+                            <label class="form-check-label" for="chk5">Child Custody and Visitaion</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk6">
+                            <label class="form-check-label" for="chk6">Divorce</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk7">
+                            <label class="form-check-label" for="chk7">Paternity</label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="chk8">
+                            <label class="form-check-label" for="chk8">Spousal Support or Alimony</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center py-4">
+                        <button type="button" class="btn btn-primary btn-lg rounded-pill px-4">FIND A LAWYER
+                            NOW</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
 
@@ -192,6 +263,20 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            function openModal(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+        }
+            
+            var modalTriggers = document.querySelectorAll('.modal-trigger');
+        modalTriggers.forEach(function (button) {
+            button.onclick = function () {
+                var modalId = this.getAttribute('data-modal');
+                openModal(modalId);
+            }
+        });
+        </script>
 
 
 
