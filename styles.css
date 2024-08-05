@@ -5,6 +5,12 @@ body { font-family: 'Gotham'; font-weight: normal;}
 .content { background: url(img/bg.jpg) no-repeat center 0;  height: auto; color: #fff; background-size: cover;}
 
 
+.client-list { display:  flex; align-items: flex-start; border-bottom: 1px solid #4973a1; padding: 10px 0;}
+.client-list:last-child {border-bottom: none;}
+.client-list .client-info{  width: 110px; padding-right: 15px; text-align: center;}
+.client-list .client-desc {  width: calc(100% - 120px);}
+.client-list .client-desc .read {  color: #fbd243; background: url(img/book.png) no-repeat right center; padding-right: 20px;}
+
 
 
 footer { padding: 20px 0; color: #929ba4;}
